@@ -14,3 +14,19 @@ https://www.cybermedian.com/ru/a-comprehensive-guide-to-uml-class-diagram/
 
 В этой призентации, в конце есть диограмма для 'Задания 1'
 https://docs.google.com/presentation/d/1d-ReTu3A_944hmccTxqbUrRNMHtIDViiCMKvUUaKu24/edit?pli=1#slide=id.g161fe117232_1_7
+
+# HomeWork 2
+
+Задание.
+Прислать простую реализацию 5-ти Патернов ,на любом языке (С комментариями ), из списка -
+
+Строитель (Builder)
+Цепочка обязанностей (Chain of Responsibility)
+Команда (Command)
+Итератор (Iterator)
+Посредник (Mediator)
+Памятка (Memento)
+Состояние (State)
+Стратегия (Strategy)
+Шаблонный метод (Template Method)
+Посетитель (Visitor)
