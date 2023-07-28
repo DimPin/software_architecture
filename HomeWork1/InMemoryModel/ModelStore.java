@@ -10,6 +10,10 @@ public class ModelStore implements IModelChanger {
     public Camera Cameras;
     private IModelChengedObserver changeObservers;
 
+    public IModelChengedObserver getChangeObservers() {
+        return changeObservers;
+    }
+
     public Scene GetScena(int num) {
         return Scenes;
     }
