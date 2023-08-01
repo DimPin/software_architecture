@@ -1,16 +1,34 @@
 package HomeWork4;
 
-// Класс для геометрических фигур
+/**
+ * Общий класс для геометрических фигур
+ */
 abstract class Shape {
-    // Общие поля и методы для всех геометрических фигур
+    /**
+     * Считает площадь для фигуры
+     * @return площадь фигуры в виде дроби с типом double
+     */
     abstract double getArea();
+
+    /**
+     * Считает периметр фигуры
+     * @return переметр фигуры в виде дроби с типом double
+     */
     abstract double getPerimeter();
 }
 
-// Класс для круга
+/**
+ * Класс для круга
+ */
 class Circle extends Shape {
+    /** Поле радиус */
     private double radius;
 
+
+    /**
+     * Конструктор класса 
+     * @param radius для создания круга с определённым радиусом
+     */
     public Circle(double radius) {
         this.radius = radius;
     }
@@ -26,11 +44,19 @@ class Circle extends Shape {
     }
 }
 
-// Класс для прямоугольника
+/**
+ * Класс для прямоугльника
+ */
 class Rectangle extends Shape {
+    /** Поля длинна (lenght), ширина (width)*/
     private double length;
     private double width;
 
+    /**
+     * Конструктор класса
+     * @param length для созданния прямоугольника с заданной длинной
+     * @param wigth для созданния прямоугольника с заданной шириной
+     */
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
@@ -47,12 +73,22 @@ class Rectangle extends Shape {
     }
 }
 
-// Класс для треугольника
+/**
+ * Класс для треугольника
+ */
 class Triangle extends Shape {
+    /** Первая, вторая, третья сторона */
     private double side1;
     private double side2;
     private double side3;
 
+    /**
+     * Конструктор класса
+     * @param side1 ->
+     * @param side2 ->
+     * @param side3 ->
+     * -> для создания треугольника с заданными сторонами
+     */
     public Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
@@ -71,10 +107,14 @@ class Triangle extends Shape {
     }
 }
 
-// Главный класс приложения
+/**
+ * Главный класс приложения
+ */
 public class GeometryApp {
     public static void main(String[] args) {
-        // Пример использования конкретных классов геометрических фигур
+        /**
+         * Пример использования конкретных классов геометрических фигур
+         */
         Circle circle = new Circle(5.0);
         System.out.println("Площадь круга: " + circle.getArea());
         System.out.println("Периметр круга: " + circle.getPerimeter());
